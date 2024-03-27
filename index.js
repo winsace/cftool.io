@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     async function fetchErrorData() {
         try {
-            const response = await fetch('../database/xsieq.tsv');
+            const response = await fetch('https://docs.google.com/spreadsheets/d/e/2PACX-1vSWiy5k4oM4qn4Por4LKSUMLkchO4mZWLt79VV7kXctFMBCR6JctzAhlSmRLhKhe3ed59hCPa7UcyB7/pub?gid=287360518&single=true&output=tsv');
             if (!response.ok) {
                 throw new Error('Failed to fetch xsieq.tsv');
             }
