@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     // Fetch announcements from the provided URL
-    fetch('https://raw.githubusercontent.com/winsace/cftool.io/main/test.txt')
+    fetch('test.txt')
         .then(response => response.text())
         .then(data => {
             // Parse data into an array of announcements
@@ -33,8 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     async function fetchErrorData() {
         try {
-            const response = await fetch('https://docs.google.com/spreadsheets/d/e/2PACX-1vTmHfW7MOensz65Shq7FDKiAySoqdbHrnL-KQINPIPWhd8M0JxL6dTOvRvtGtFG644An9fWWf_kugH3/pub?gid=1064811877&single=true&output=csv
-');
+            const response = await fetch('xsieq.csv');
             if (!response.ok) {
                 throw new Error('Failed to fetch xsieq.csv');
             }
