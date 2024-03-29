@@ -1,0 +1,71 @@
+UID,DOMAIN,ERROR CODE,DESCRIPTION,ACTION,SAMPLE TICKET,SAMPLE IM,LAST UPDATE,REP
+1,XSI,A101,Example:|Archive process cannot access tapedrive.,Retry.|If it returns- escalate a ticket.,,,3/27/2024,WLAO
+2,XSI,A102,Example:|Archive process cannot archive  job.,Retry.|If it returns- escalate a ticket.,,,3/27/2024,WLAO
+3,XSI,A103,Example:|Job Archive Retrieval Tape Request.,Retry.|If it returns- escalate a ticket.,,,3/27/2024,WLAO
+4,XSI,A104,Example:|Job Archive/Retrieval System cannot access a tape.,Retry.|If it returns- escalate a ticket.,,,3/27/2024,WLAO
+5,XSI,A105,Example:|Wrong tape supplied for Job Retrieval Request.,Retry.|If it returns- escalate a ticket.,,,3/27/2024,WLAO
+6,XSI,A106,Example:|Job archive tape is full.,Retry.|If it returns- escalate a ticket.,,,3/27/2024,WLAO
+7,XSI,A107,Example:|Archive process could not format tape.,Retry.|If it returns- escalate a ticket.,,,3/27/2024,WLAO
+8,XSI,A108,Example:|Operator Change Tape request.,Retry.|If it returns- escalate a ticket.,,,3/27/2024,WLAO
+9,XSI,A109,Example:|No more tape retrieval requests.,Retry.|If it returns- escalate a ticket.,,,3/27/2024,WLAO
+10,XSI,A110,,Retry.|If it returns- escalate a ticket.,,,3/27/2024,WLAO
+11,XSI,A111,,Retry.|If it returns- escalate a ticket.,,,3/27/2024,WLAO
+12,XSI,A112,,Retry.|If it returns- escalate a ticket.,,,3/27/2024,WLAO
+13,XSI,A113,,Retry.|If it returns- escalate a ticket.,,,3/27/2024,WLAO
+14,XSI,A114,,Retry.|If it returns- escalate a ticket.,,,3/27/2024,WLAO
+15,XSI,A115,,Retry.|If it returns- escalate a ticket.,,,3/27/2024,WLAO
+16,XSI,A116,,Retry.|If it returns- escalate a ticket.,,,3/27/2024,WLAO
+17,XSI,A118,Example:|Unable to create directory '/ja1arch8/mcp/run/job_archive/xsi/staging/2016/11/02/17597/1759700' to archive job 175970002. errno: 17,Retry.|If it returns- escalate a ticket.,,,3/27/2024,WLAO
+18,XSI,A119,Example:|Unable to lock header number 98866597. Error 0 (no error),Retry.|If it returns- escalate a ticket.,,,3/27/2024,WLAO
+19,XSI,A122,Example:|Unable to retrieve doc info for document 92825365 prior to truncation; dm_errno = 201- xfs_errno = 3- errno = 17,Retry.|If it returns- escalate a ticket.,,,3/27/2024,WLAO
+20,XSI,B100,Example:|BATCH JOB [18587903] is INVALID- destroying qitem,Kill? Ok?,,,3/27/2024,WLAO
+21,XSI,B104,Example:|PAST DUE CHILD count for BATCH JOB [43335551] for USER_ID [wfwire] is [36],Kill.,,,3/27/2024,WLAO
+22,XSI,B202,Example:|Error getting abcestors from the database for entityNo 2876900 and customer 854290: 1000 0 No matching msg for error 1000 found,Retry.|If it returns- escalate a ticket.,,,3/27/2024,WLAO
+23,XSI,C107,Example:|cannot log bc_detail record,Retry.|If it returns- escalate a ticket.,,,3/27/2024,WLAO
+24,XSI,C501,Example:|doSweep failed,Retry.|If they do not clear - notify the customer and have them check their system. Once everything is ok on their side - retry the error.|If the error still does not clear - escalate a ticket.,,,3/27/2024,WLAO
+25,XSI,C502,Example:|doRegister failed,Retry.,,,3/27/2024,WLAO
+26,XSI,C600,Example:|Exhausted attempt to get DB lock for job 191612137: Error Set 27 error 120 cdcDbAccess::lockJob(): error 3 processing results for job 191612137  cdc_id CDC_2 ,Retry.|If it returns- escalate a ticket.,,,3/27/2024,WLAO
+27,XSI,E101,Example:|Virtual Domain setUser failed,Retry.,,,3/27/2024,WLAO
+28,XSI,E107,Example:|No Subject text (HEADER/ME822/SUBJECT) provided,Retry.|If it returns- escalate a ticket.,,,3/27/2024,WLAO
+29,XSI,E108,Example:|read_the_message: UTF-8 Decoding of subject failed,Escalate a ticket.,,,3/27/2024,WLAO
+30,XSI,E124,Example:|Too many transient SMTP errors have occurred; Errors=101  Limit=100,This is caused by invalid spacing in the email address. Cancel the job with notice.,,,3/27/2024,WLAO
+31,XSI,F101,Example:|Error description: chk_cover_sheet(): Cant get cover: 729993 MSK Custom Fax Cover to /xdds/fdc/docs/14922/t/MSK Custom Fax Cover cs_errno: 8199 (hard),For F2M User - set Cover Type to MM.,,,3/27/2024,WLAO
+32,XSI,F101,Example |Error description: bget(): Failed to get attachments,Cancel the job.,,IM1451182,3/27/2024,WLAO
+33,XSI,F101,Other Errors.,Retry.|If it returns- escalate a ticket.,,,3/27/2024,WLAO
+34,XSI,F102,Example:|Document: 1546874906 [format: HTML:unspec]|Document Page Count: 1263,Cancel with notice that document is greater than 999 pages.,,,3/27/2024,WLAO
+35,XSI,F102,Example:|Error description: Invalid AR record  file /xdds/fdc/in/94b54.doc offset 69132|Document:1741782405 [format: xar]|Document Page Count: 0,Retry.|If it returns- escalate a ticket.,,,3/27/2024,WLAO
+35,XSI,F102,Example:|Read error on xar file /xdds/fdc/in/ba064.doc  filesize = 28  got 0,Retry.|If it returns- escalate a ticket.,,,3/27/2024,WLAO
+36,XSI,F103,Example:|No error description.,Retry.,,,3/27/2024,WLAO
+37,XSI,F124,Example:|No error description.,Retry.,,,3/27/2024,WLAO
+38,XSI,F134,Example:|fdc Windows NT MailMERGE rasterization error,OK.,,,3/27/2024,WLAO
+39,XSI,F136,Example:|Win Raster error description: FDC-200044: MMCQutil.C::CreateRequestFile(): Datarow too large. File size = 8338,The total size of all the inserts plus the content in the NOTES section of the cover page is greater than 8kb. ,,,3/27/2024,WLAO
+40,XSI,F138,Example:|The MailMERGE Engine [xsiashvmwr8:MMEngine1] reported numerous rasterization errors and requires attention.,Kill.|For any errors referencing TTS - escalate a ticket.|If all job numbers are the same - escalate a ticket.|If you kill the errors and they return - escalate a ticket.,,,3/27/2024,WLAO
+41,XSI,F139,Example:|No error description found,If there are one or two - retry.|If there are many - escalate a ticket and do not touch unless/until told otherwise.,,,3/27/2024,WLAO
+42,XSI,F142,Example:|fdc TTS Proxy conversion error,Retry.|If it returns- escalate a ticket.,,,3/27/2024,WLAO
+43,XSI,F150,Example:|Request DiskSpace FAILED on FDC's DiskSpace Manager ,Retry.|If it returns- escalate a ticket.,,,3/27/2024,WLAO
+44,XSI,F151,Example:|OFFLINE LGC: tflgc20 has not responded to LineStatus command in 944 seconds,Escalate to verify the error can be killed;|Kill.,,,3/27/2024,WLAO
+45,XSI,F152,Example:|bms error,Retry.|If it returns- escalate a ticket.,,,3/27/2024,WLAO
+46,XSI,F600,Example:|Max push retries exhausted. push_form_data failed with error:22,Kill.,,,3/27/2024,WLAO
+47,XSI,F800,Example:|Error Set 0 error -1 Failed to execute mis_create_f2m_user for job 1431035116...,Retry if the fax number is not already in use; otherwise - ok.,,,3/27/2024,WLAO
+48,XSI,F800,Example:|HM error 201 docno is invalid: failed to init hdrno 1435908238 for job 1419917560,Retry.|If it returns- escalate a ticket.,,,3/27/2024,WLAO
+49,XSI,F800,"Example:|Error Set 0 error -1 Failed to execute mis_create_f2m_user for job 1645344242:get_DBC(""xsi"" ""VALIDATE"") on f2mapps2 - error_msg=:",Retry.|If it returns- escalate a ticket.,,,3/27/2024,WLAO
+50,XSI,F801,Example:|Error Set 0 error -1 credit review decision not reached in time: ,Retry.|If it returns- escalate a ticket.,,,3/27/2024,WLAO
+49,XSI,H101,Example:|Could not get action count 1689911,Retry.|If it returns- escalate a ticket.,,,3/27/2024,WLAO
+50,XSI,H101,Example:|Action retrieval failure 1802289-1,Retry.|If it returns- escalate a ticket.,,,3/27/2024,WLAO
+51,XSI,H101,Example:|arn=1805213  rrn=0  aan=1 GetResponse call failed. errno=17,Retry.|If it returns- escalate a ticket.,,,3/27/2024,WLAO
+52,XSI,H106,Example:|Failed to retrieve StoredEmailBody [aui]. error=nameNotFound GetBody failed for userno=2618477,Correct the Fax2Mail Email Body to a valid email body.,,,3/27/2024,WLAO
+53,XSI,H106,Example:|Failed to retrieve StoredEmailSubject [Fax Pages from Caller]. error=nameNotFound GetSubject failed for userno=2361634,Correct the Fax2Mail Email Subject to a valid email subject.,,,3/27/2024,WLAO
+54,XSI,H106,Example:|profile FORMAT_OPTIONS value [PDF: OCR] was wrong. Please check the format_options ,Correct the format_options for the f2m_format.,,,3/27/2024,WLAO
+55,XSI,H109,Example:|Not able to flush all pending responses. Total=4. Responses processed = 5,,,,3/27/2024,WLAO
+56,XSI,H110,Example:|immediate actions processing failure 1689911-340794,,,,3/27/2024,WLAO
+57,XSI,H112,Example:|arn=1795707  rrn=22  aan=1 Unable to set virtual domain for user 2635454l. error: SYSTEM error -1 Virtual domain 'USHCD' is not defined in the configuration,,,,3/27/2024,WLAO
+58,XSI,H117,,,,,,
+59,XSI,H122,,,,,,
+,XSI,H124,,,,,,
+,XSI,,,,,,,
+,XSI,,,,,,,
+,XSI,,,,,,,
+,XSI,,,,,,,
+,XSI,,,,,,,
+,XSI,,,,,,,
+,XSI,,,,,,,
