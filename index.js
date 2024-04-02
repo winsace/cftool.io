@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     async function fetchErrorData() {
         try {
-            const response = await fetch('../database/xsieq.csv');
+            const response = await fetch('xsieq.csv');
             if (!response.ok) {
                 throw new Error('Failed to fetch xsieq.csv');
             }
