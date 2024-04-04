@@ -1,0 +1,274 @@
+UID,DOMAIN,ERROR CODE,DESCRIPTION,ACTION,SAMPLE TICKET,SAMPLE IM,LAST UPDATE,REP
+1,XSI,A101,Example:|Archive process cannot access tapedrive.,Retry.|If it returns- escalate a ticket.,,,3/27/2024,WLAO
+2,XSI,A102,Example:|Archive process cannot archive  job.,Retry.|If it returns- escalate a ticket.,,,3/27/2024,WLAO
+3,XSI,A103,Example:|Job Archive Retrieval Tape Request.,Retry.|If it returns- escalate a ticket.,,,3/27/2024,WLAO
+4,XSI,A104,Example:|Job Archive/Retrieval System cannot access a tape.,Retry.|If it returns- escalate a ticket.,,,3/27/2024,WLAO
+5,XSI,A105,Example:|Wrong tape supplied for Job Retrieval Request.,Retry.|If it returns- escalate a ticket.,,,3/27/2024,WLAO
+6,XSI,A106,Example:|Job archive tape is full.,Retry.|If it returns- escalate a ticket.,,,3/27/2024,WLAO
+7,XSI,A107,Example:|Archive process could not format tape.,Retry.|If it returns- escalate a ticket.,,,3/27/2024,WLAO
+8,XSI,A108,Example:|Operator Change Tape request.,Retry.|If it returns- escalate a ticket.,,,3/27/2024,WLAO
+9,XSI,A109,Example:|No more tape retrieval requests.,Retry.|If it returns- escalate a ticket.,,,3/27/2024,WLAO
+10,XSI,A110,,Retry.|If it returns- escalate a ticket.,,,3/27/2024,WLAO
+11,XSI,A111,,Retry.|If it returns- escalate a ticket.,,,3/27/2024,WLAO
+12,XSI,A112,,Retry.|If it returns- escalate a ticket.,,,3/27/2024,WLAO
+13,XSI,A113,,Retry.|If it returns- escalate a ticket.,,,3/27/2024,WLAO
+14,XSI,A114,,Retry.|If it returns- escalate a ticket.,,,3/27/2024,WLAO
+15,XSI,A115,,Retry.|If it returns- escalate a ticket.,,,3/27/2024,WLAO
+16,XSI,A116,,Retry.|If it returns- escalate a ticket.,,,3/27/2024,WLAO
+17,XSI,A118,Example:|Unable to create directory '/ja1arch8/mcp/run/job_archive/xsi/staging/2016/11/02/17597/1759700' to archive job 175970002. errno: 17,Retry.|If it returns- escalate a ticket.,,,3/27/2024,WLAO
+18,XSI,A119,Example:|Unable to lock header number 98866597. Error 0 (no error),Retry.|If it returns- escalate a ticket.,,,3/27/2024,WLAO
+19,XSI,A122,Example:|Unable to retrieve doc info for document 92825365 prior to truncation; dm_errno = 201- xfs_errno = 3- errno = 17,Retry.|If it returns- escalate a ticket.,,,3/27/2024,WLAO
+20,XSI,B100,Example:|BATCH JOB [18587903] is INVALID- destroying qitem,Kill? Ok?,,,3/27/2024,WLAO
+21,XSI,B104,Example:|PAST DUE CHILD count for BATCH JOB [43335551] for USER_ID [wfwire] is [36],Kill.,,,3/27/2024,WLAO
+22,XSI,B202,Example:|Error getting abcestors from the database for entityNo 2876900 and customer 854290: 1000 0 No matching msg for error 1000 found,Retry.|If it returns- escalate a ticket.,,,3/27/2024,WLAO
+23,XSI,C107,Example:|cannot log bc_detail record,Retry.|If it returns- escalate a ticket.,,,3/27/2024,WLAO
+24,XSI,C501,Example:|doSweep failed,Retry.|If they do not clear - notify the customer and have them check their system. Once everything is ok on their side - retry the error.|If the error still does not clear - escalate a ticket.,,,3/27/2024,WLAO
+25,XSI,C502,Example:|doRegister failed,Retry.,,,3/27/2024,WLAO
+26,XSI,C600,Example:|Exhausted attempt to get DB lock for job 191612137: Error Set 27 error 120 cdcDbAccess::lockJob(): error 3 processing results for job 191612137  cdc_id CDC_2 ,Retry.|If it returns- escalate a ticket.,,,3/27/2024,WLAO
+27,XSI,E101,Example:|Virtual Domain setUser failed,Retry.,,,3/27/2024,WLAO
+28,XSI,E107,Example:|No Subject text (HEADER/ME822/SUBJECT) provided,Retry.|If it returns- escalate a ticket.,,,3/27/2024,WLAO
+29,XSI,E108,Example:|read_the_message: UTF-8 Decoding of subject failed,Escalate a ticket.,,,3/27/2024,WLAO
+30,XSI,E124,Example:|Too many transient SMTP errors have occurred; Errors=101  Limit=100,This is caused by invalid spacing in the email address. Cancel the job with notice.,,,3/27/2024,WLAO
+31,XSI,F101,Example:|Error description: chk_cover_sheet(): Cant get cover: 729993 MSK Custom Fax Cover to /xdds/fdc/docs/14922/t/MSK Custom Fax Cover cs_errno: 8199 (hard),For F2M User - set Cover Type to MM.,,,3/27/2024,WLAO
+32,XSI,F101,Example |Error description: bget(): Failed to get attachments,Cancel the job.,,IM1451182,3/27/2024,WLAO
+33,XSI,F101,Other Errors.,Retry.|If it returns- escalate a ticket.,,,3/27/2024,WLAO
+34,XSI,F102,Example:|Document: 1546874906 [format: HTML:unspec]|Document Page Count: 1263,Cancel with notice that document is greater than 999 pages.,,,3/27/2024,WLAO
+35,XSI,F102,Example:|Error description: Invalid AR record  file /xdds/fdc/in/94b54.doc offset 69132|Document:1741782405 [format: xar]|Document Page Count: 0,Retry.|If it returns- escalate a ticket.,,,3/27/2024,WLAO
+36,XSI,F102,Example:|Read error on xar file /xdds/fdc/in/ba064.doc  filesize = 28  got 0,Retry.|If it returns- escalate a ticket.,,,3/27/2024,WLAO
+37,XSI,F103,Example:|No error description.,Retry.,,,3/27/2024,WLAO
+38,XSI,F124,Example:|No error description.,Retry.,,,3/27/2024,WLAO
+39,XSI,F134,Example:|fdc Windows NT MailMERGE rasterization error,OK.,,,3/27/2024,WLAO
+40,XSI,F136,Example:|Win Raster error description: FDC-200044: MMCQutil.C::CreateRequestFile(): Datarow too large. File size = 8338,The total size of all the inserts plus the content in the NOTES section of the cover page is greater than 8kb. ,,,3/27/2024,WLAO
+41,XSI,F138,Example:|The MailMERGE Engine [xsiashvmwr8:MMEngine1] reported numerous rasterization errors and requires attention.,Kill.|For any errors referencing TTS - escalate a ticket.|If all job numbers are the same - escalate a ticket.|If you kill the errors and they return - escalate a ticket.,,,3/27/2024,WLAO
+42,XSI,F139,Example:|No error description found,If there are one or two - Retry.|If there are many - Escalate a ticket and do not touch unless/until told otherwise.,,,3/27/2024,WLAO
+43,XSI,F142,Example:|fdc TTS Proxy conversion error,Retry.|If it returns- escalate a ticket.,,,3/27/2024,WLAO
+44,XSI,F150,Example:|Request DiskSpace FAILED on FDC's DiskSpace Manager ,Retry.|If it returns- escalate a ticket.,,,3/27/2024,WLAO
+45,XSI,F151,Example:|OFFLINE LGC: tflgc20 has not responded to LineStatus command in 944 seconds,Escalate to verify the error can be killed;|Kill.,,,3/27/2024,WLAO
+46,XSI,F152,Example:|bms error,Retry.|If it returns- escalate a ticket.,,,3/27/2024,WLAO
+47,XSI,F600,Example:|Max push retries exhausted. push_form_data failed with error:22,Kill.,,,3/27/2024,WLAO
+48,XSI,F800,Example:|Error Set 0 error -1 Failed to execute mis_create_f2m_user for job 1431035116...,Retry if the fax number is not already in use; otherwise - ok.,,,3/27/2024,WLAO
+49,XSI,F800,Example:|HM error 201 docno is invalid: failed to init hdrno 1435908238 for job 1419917560,Retry.|If it returns- escalate a ticket.,,,3/27/2024,WLAO
+50,XSI,F800,Example:|Error Set 0 error -1 Failed to execute mis_create_f2m_user for job 1645344242:get_DBC(xsi VALIDATE) on f2mapps2 - error_msg=:,Retry.|If it returns- escalate a ticket.,,,3/27/2024,WLAO
+51,XSI,F801,Example:|Error Set 0 error -1 credit review decision not reached in time: ,Retry.|If it returns- escalate a ticket.,,,3/27/2024,WLAO
+52,XSI,H101,Example:|Could not get action count 1689911,Retry.|If it returns- escalate a ticket.,,,3/27/2024,WLAO
+53,XSI,H101,Example:|Action retrieval failure 1802289-1,Retry.|If it returns- escalate a ticket.,,,3/27/2024,WLAO
+54,XSI,H101,Example:|arn=1805213  rrn=0  aan=1 GetResponse call failed. errno=17,Retry.|If it returns- escalate a ticket.,,,3/27/2024,WLAO
+55,XSI,H106,Example:|Failed to retrieve StoredEmailBody [aui]. error=nameNotFound GetBody failed for userno=2618477,Correct the Fax2Mail Email Body to a valid email body.,,,3/27/2024,WLAO
+56,XSI,H106,Example:|Failed to retrieve StoredEmailSubject [Fax Pages from Caller]. error=nameNotFound GetSubject failed for userno=2361634,Correct the Fax2Mail Email Subject to a valid email subject.,,,3/27/2024,WLAO
+57,XSI,H106,Example:|profile FORMAT_OPTIONS value [PDF: OCR] was wrong. Please check the format_options ,Correct the format_options for the f2m_format.,,,3/27/2024,WLAO
+58,XSI,H109,Example:|Not able to flush all pending responses. Total=4. Responses processed = 5,Retry.,,,3/27/2024,WLAO
+59,XSI,H110,Example:|immediate actions processing failure 1689911-340794,Retry.|If it returns- escalate a ticket.,,,3/27/2024,WLAO
+60,XSI,H112,Example:|arn=1795707  rrn=22  aan=1 Unable to set virtual domain for user 2635454. error: SYSTEM error -1 Virtual domain 'USHCD' is not defined in the configuration,Correct the Virtual Domain to a valid domain. The error will retry itself.,,,3/27/2024,WLAO
+61,XSI,H117,Example:|Invalid F2M_format. [pdf:ex] for user 2618477,Correct the f2m_format.,,,3/27/2024,WLAO
+62,XSI,H122,Example:|1754223-1056-1 MCP job inject failed. xsi_err=[Error Set 21 error 5 1754223-1056-1 job 1532258431; Failed to install header: ],Retry.|If it returns- escalate a ticket.,,,3/27/2024,WLAO
+63,XSI,H124,Example:|Can't get user id for uan after max retry.,Retry.|If it returns- escalate a ticket.,,,3/27/2024,WLAO
+64,XSI,J101,Example:|item owner [jmonv4c16_sd14] oper is [confirm],Retry.|If it returns- escalate a ticket.,,,3/27/2024,WLAO
+65,XSI,J103,Example:|Can't access header 1555989753: no error,Retry.|If it returns- escalate a ticket.,,,3/27/2024,WLAO
+66,XSI,J106,Example:|Job setup failed due to: Can't access list. user 2312670 list #.f2m_recip_list - 2312670 lm_errno 24: The specified list does not exist.|Fix the problem and retry the error - or cancel the job.,Log into the Fax2Mail user's account.|Add their email address as an additional recipient. Retry the error(s). Once it/they clear - remove the additional recipient from the user. ,,,3/27/2024,WLAO
+67,XSI,J106,Example:|Job setup failed due to: Can't access list. user 1075326 list #sftp_sched - lm_errno 24: The specified list does not exist.|Fix the problem and retry the error - or cancel the job.,Make sure the list exists; make sure the list is on the correct switch; make sure the list is created at the right level (customer/user) - re/create the list and retry the error.,,,3/27/2024,WLAO
+68,XSI,J106,Example:|Job setup failed due to: No EA in segment [MULTIPLE].,Retry.|If it returns- escalate a ticket.,,,3/27/2024,WLAO
+69,XSI,J107,Example:|Can't read ctl file: no error,Retry.|If they return -try one at a time - three seconds apart.|If any still won't clear - after having been tried separately - escalate a ticket.,,,3/27/2024,WLAO
+70,XSI,J107,Example:|Can't lock ctl file: no error,Retry.|If they return - try one at a time - three seconds apart.|If any still won't clear - after having been tried separately - escalate a ticket.,,,3/27/2024,WLAO
+71,XSI,J109,Example:|Got completion for subjob not inprogress. qitem owner is jmonv3c13_sd14,Kill.,,,3/27/2024,WLAO
+72,XSI,J117,Example:|Don't know where the input doc comes from,Retry.|If it returns- escalate a ticket.,,,3/27/2024,WLAO
+73,XSI,J126,Example:|no user or userID in job header,Retry.|If it returns- escalate a ticket.,,,3/27/2024,WLAO
+74,XSI,J138,Example:|No docno found in header,Retry.|If it returns - cancel.|If cannot cancel - escalate a ticket.||If the user for the cancellation notice does not match the user for the job - do cancel WITHOUT notice. For example - if the user id for the job is MLMQCORPHTML (Merrill Lynch) and the cancellation is going to JCROSS - you will cancel without notice.,,,3/27/2024,WLAO
+75,XSI,J158,Example:|No DC available for addresses,Check the document to determine if there are too many pages. If there are - cancel with notice.|If the error is route related - deliverability will issue a reroute on the number. Once this is complete - cancel the job with notice.,,,3/27/2024,WLAO
+76,XSI,J161,Example:|SPECIAL HANDLING REQUESTED,Kill.,,,3/27/2024,WLAO
+77,XSI,J162,Example:|No items to deliver,Cancel.,,,3/27/2024,WLAO
+78,XSI,J163,Example:|LARGE Delivery List - (4703 items),Kill.,,,3/27/2024,WLAO
+79,XSI,J164,Example:|Can not find user,Retry.|If it returns- escalate a ticket.,,,3/27/2024,WLAO
+80,XSI,J169,Example:|Some items of email_final_error_report not delivered,Gather the user id.|Ok the error.|Confirm with the customer the correct admin_to address - if possible - and update the profile accordingly.|If this is not possible - disable the delivery report.||If the amount of J169s in the error queue is higher than usual - determine the cause. If the cause is a failing customer push - do NOT ok the errors. Reach out to the customer and once the issue is resolved - retry the errors. ,,,3/27/2024,WLAO
+81,XSI,J169,Example:|Some items of report not delivered,Gather the user id.|Ok the error.|Confirm with the customer the correct admin_to address - if possible - and update the profile accordingly.|If this is not possible - disable the delivery report.||If the amount of J169s in the error queue is higher than usual - determine the cause. If the cause is a failing customer push - do NOT ok the errors. Reach out to the customer and once the issue is resolved - retry the errors. ,,,3/27/2024,WLAO
+82,XSI,J171,Example:|Could not deliver MCP2MCP report,Retry.|If it returns- escalate a ticket.,,,3/27/2024,WLAO
+83,XSI,J172,Example:|Can't set MCP bit for doc 205318031: dm_errno 201,Retry.|If it returns- escalate a ticket.,,IM1440096,3/27/2024,WLAO
+84,XSI,J178,Example:|Invalid %USER:TRANS keyword in header,Correct the user's translators and cancel the error.,,,3/27/2024,WLAO
+85,XSI,J180,Example:|Job setup error: Cannot get mail merge cover sheet object numbers,Retry once only.|Cancel with notice back to customer with which specific object was not found.,,,3/27/2024,WLAO
+86,XSI,J180,Example:|Job setup error: Cannot get banner number from object store,Retry once only.|Cancel with notice back to customer with which specific object was not found.,,,3/27/2024,WLAO
+87,XSI,J182,Example:|Job scheduled too far in advance.,Cancel.,,,3/27/2024,WLAO
+88,XSI,J188,Example:|jmon got sjobdone request - but job already complete,If the job is complete - Kill the error.|If the job is still in process - retry. If the error returns - escalate a ticket.,,,3/27/2024,WLAO
+89,XSI,J201,Example:|infinite loop in jmon,Kill once.|If it returns - escalate a ticket.,,,3/27/2024,WLAO
+90,XSI,J203,Example:|Can't put item on fax-vmxsitf9 queue for 1729338202-361: disk update failed at server - 13,Retry.|If it returns- escalate a ticket.,,,3/27/2024,WLAO
+91,XSI,J204,Can't save job header 2620717: DMDoc error: dm_errno 201,Retry.|If it returns- escalate a ticket.,,,3/27/2024,WLAO
+92,XSI,J217,Example:|Can't init job: initialization problem.  sys/user(comb) stuff is uninitialized,Retry.|If it returns- escalate a ticket.,,,3/27/2024,WLAO
+93,XSI,J219,Example:|Waiting for rollback or commit,Retry.|If it returns- escalate a ticket.,,,3/27/2024,WLAO
+94,XSI,J220,Example:|Can't open tfnas10(800 800):/vol/xsijmon2/mcp/run/jmon/92339524-0.rollback,Retry.|If it returns- escalate a ticket.,,,3/27/2024,WLAO
+95,XSI,J229,Example:|Can't decrement parent job's count.,Retry.|If it returns- escalate a ticket.,,,3/27/2024,WLAO
+96,XSI,J235,Example:|Call to the Route Tree failed.,Cancel.,,,3/27/2024,WLAO
+97,XSI,J236,Example:|1 recipients fom subjob 2 weren't assigned to delivery subjobs,Retry.|If it returns- escalate a ticket.,,,3/27/2024,WLAO
+98,XSI,J246,Example:|can't deliver requested features to dctrans,Retry.|If it returns- escalate a ticket.,,,3/27/2024,WLAO
+99,XSI,J250,Example:|Jmon can't save changes,Retry.|If it returns- escalate a ticket.,,,3/27/2024,WLAO
+100,XSI,J254,Example:|Address type doesn't support job features,If the job is a VOICE job:|Update the route_no to 0 and retry the error.|If the route_no is 0 and the job still errors J254 - verify the area code is valid.|For all other types of jobs:|Retry.|Ok.||If this is a VOICE job for Centurylink (CANs 853753 and 861907) - escalate a ticket. Do NOT change the route_no.,,,3/27/2024,WLAO
+101,XSI,J260,Example:|user:retry_algo keyword not in job header,Retry.,,,3/27/2024,WLAO
+102,XSI,J265,Example:|Wrong number of bcdetail records,Retry.|If it returns- escalate a ticket.,,,3/27/2024,WLAO
+103,XSI,J269,Example:|expiration time has already passed,Example:|Determine if the jobs should deliver:  If generated from clearing J342s - always deliver. Otherwise contact the customer(s) and find out if they want the jobs.|If jobs are to deliver - escalate a ticket.|If jobs are to be cancelled - cancel one at a time if less than 25. If more than 25 - escalate for assistance with cancellations.,,,3/27/2024,WLAO
+104,XSI,J269,Example:|expiration time is too short,Example:|Escalate a ticket to have the job(s) corrected and delivered.,,,3/27/2024,WLAO
+105,XSI,J274,Example:|Too many bytes in Managed Email document,No action. These will be handled by the NOC.,,,3/27/2024,WLAO
+106,XSI,J281,Example:|Invalid me_reply_to address for Managed Email,Correct the me_admin_to and me_reply_to and cancel the jobs.,,,3/27/2024,WLAO
+107,XSI,J285,Example:|Parameter 'sms_activate_userid' not found in configuration for virtual domain default,Retry.|If it returns- escalate a ticket.,,,3/27/2024,WLAO
+108,XSI,J287,Example:|Unable to determine the virtual domain,Retry.,,,3/27/2024,WLAO
+109,XSI,J289,Example:|Problem retrieving recipient database entry,Retry.|If it returns- escalate a ticket.,,,3/27/2024,WLAO
+110,XSI,J292,Example:|Job flags information not found for job ###,Cancel.,,IM1548562,3/27/2024,WLAO
+111,XSI,J295,Example:|unable to find user: user in recipient db entry to internet address allen sun@xmr7.com,If this is an internal test job - cancel.,,,3/27/2024,WLAO
+112,XSI,J302,Example:|Warning: Job may be SPAM,Kill.,,,3/27/2024,WLAO
+113,XSI,J304,Example:|Can't write commit file on vms14mcp3,Retry.|If it returns- escalate a ticket.,,,3/27/2024,WLAO
+114,XSI,J306,Example:|Too many bytes in Managed Email document,Cancel.,,,3/27/2024,WLAO
+115,XSI,J315,Example:|Cannot write job5 elog,Retry.|If it returns- escalate a ticket.,,,3/27/2024,WLAO
+116,XSI,J320,Example:|Unable to populate DC Retry Algorithm,Retry.,,,3/27/2024,WLAO
+117,XSI,J321,Example:|Can't determine if attachment is push or pull,Escalate a ticket.,,,3/27/2024,WLAO
+118,XSI,J339,Example:|Invalid blackout in %user:sms_blackout in job header,Correct the blackout and retry the error.,,,3/27/2024,WLAO
+119,XSI,J342,Example:|can't find addr_type and/or to value in forwarding_address profile element,Retry (in case it is already corrected).|Use Profile Management and go to XDDS - choose forwarding_address - add the correct value in front of the address. Save and retry the error.|(i.e. Modify froth@opentext.com to internet:froth@opentext.com.),,,3/27/2024,WLAO
+120,XSI,J342,Example:|Value '16156800' for purge_delay is larger than system maximum of '5184000',Correct the purge delay in the profile and retry.,,,3/27/2024,WLAO
+121,XSI,J342,Example:|Invalid drop_copy_address profile element,Remove INTERNET: from drop_copy_address on the F2M profile tab and retry the error.,,,3/27/2024,WLAO
+122,XSI,J345,Example:|Job was setup already,Retry.|If it returns- escalate a ticket.,,,3/27/2024,WLAO
+123,XSI,J347,Example:|Unable to open Recipient List 'vanas4(800 800):/vol/nfsjmon4/sxsi/82/8262/826243/82624385/2.list',Retry.|If it returns- escalate a ticket.,,,3/27/2024,WLAO
+124,XSI,J351,Example:|Can not get group name,Retry.|If it returns- escalate a ticket.,,,,
+125,XSI,J365,Example:|Invalid third party input channel 'test' specified,Retry.|If it returns- escalate a ticket.,,,3/27/2024,WLAO
+126,XSI,J366,Example:|In MultiNormalSjob::setJobStatusPosted,Retry.,,,3/27/2024,WLAO
+127,XSI,J369,Example:|Error committing Job Progress State - Invalid Partition,Escalate a ticket.,,,3/27/2024,WLAO
+128,XSI,J372,Example:|User ID XSI/ROBIN service status (C) is not Active,Escalate a ticket.||Because the user is cancelled - support cannot cancel these jobs.,,,3/27/2024,WLAO
+129,XSI,J377,Example:|Job contains too many 'push' attachments,Cancel.,,,3/27/2024,WLAO
+130,XSI,J388,Example:|recipDB ftp password lookup failed,Escalate a ticket. If possible - Tier 2 will enter the password and retry the job. If the password is not available to be entered - the ticket will be returned for Customer Support to contact the customer and find out what the password should be. Once the password has been obtained - we will follow the directions provided by Tier 2 in the ticket for how to proceed.,,,3/27/2024,WLAO
+131,XSI,J389,Cannot get the caller info from db||Most likely cause is some problem accessing DB.||The error may state (Caller_number 'data from profile element' must be all digits and cannot be empty),Verify the issue is with the profile element - remove the text or change to a number and cancel the error.,,,3/27/2024,WLAO
+132,XSI,J393,Example:|Workflow delivery failed,If this is for user id F2M/52320199024 - check the web push logs to see if delivery for the job has failed. If so - attach the tracer and escalate a ticket.|If this is for an OCR user - the correct OCR settings will need to be determined.|If this is for an internal user - it is likely that the workflow settings will need to be removed; however - check with the user first.,,,3/27/2024,WLAO
+133,XSI,M113,Example:|Could not insert item into mailbox: 1300861 6 attempts have been made,Retry.|If it returns- escalate a ticket.,,,3/27/2024,WLAO
+134,XSI,M117,Example:|Could not get mailbox number for user: TKFAX. - error contacting dbserv,Retry.,,,3/27/2024,WLAO
+135,XSI,M122,Example:|Could not copy mailbox item document,Retry.|If it returns- escalate a ticket.,,,3/27/2024,WLAO
+136,XSI,M300,Example:|Can not get mailbox no in the queue item for retry.,Retry.|If it returns- escalate a ticket.,,,3/27/2024,WLAO
+137,XSI,M302,Example:|Over the maximum retry is allowed,Retry.|If it returns- escalate a ticket.||M302 will eventually go through - they are set on an alarm every 15 minutes to try the MAF queue. You do not need to action these unless it builds up into the 100s or higher.,,,3/27/2024,WLAO
+138,XSI,M305,Example:|Initialize header file failed.,Retry.||They will probably return as M300 errors.,,,3/27/2024,WLAO
+139,XSI,M308,Example:|XINET: MAF e-mail bounce-back detected,Retry.|If it returns- escalate a ticket.,,,3/27/2024,WLAO
+140,XSI,M500,Example:|Unable to access header number '1784783065': no error,Retry.,,,3/27/2024,WLAO
+141,XSI,M502,Example:|Unable to retrieve Text Block,Retry.,,,3/27/2024,WLAO
+142,XSI,M504,Example:|Either push or pull (or both) must be specified for each document,Retry.|Cancel.,,,3/27/2024,WLAO
+143,XSI,M517,Example:|Remove keyword not found for static from user,Correct the error and retry. Otherwise - cancel the job if the retry does not work.,,,3/27/2024,WLAO
+14,XSI,M517,Example:|The body charset UTF-8 couldn't be converted to the output charset ISO-8859-1,Escalate a ticket.,,,3/27/2024,WLAO
+145,XSI,M517,Example a:|Cannot create file /xdds/mcp/run/virus_dir/uvscanD1/ for virus scanning||Example b:|Cannot empty virus scan directory /xdds/mcp/run/virus_dir/uvscanB1,Retry until cleared.,,,3/27/2024,WLAO
+146,XSI,M521,Example:|Error logging attachment information to the event store.,Retry.|If it returns- escalate a ticket.,,,3/27/2024,WLAO
+147,XSI,M524,Example:|Unable to lock output document number 249242695,Retry.|If it returns- escalate a ticket.,,,3/27/2024,WLAO
+148,XSI,M529,Example:|Invalid header for segment ATTACH1,Check the job to determine which subjob is in Err. Usually - it is MessagePrep in Drop Copy. Cancel on Reports.||Occassionally - the job has errored on MessagePrep in Main. If this occurs - cancel the job on Main.||If the job errors on MessagePrep in Main and is cancelled on Delivery rather than Main - it will generate J321 errors - IM1440088.,,,3/27/2024,WLAO
+149,XSI,M530,Example:|Unable to determine virtual domain,Retry.,,,3/27/2024,WLAO
+150,XSI,M547,Example:|Cannot find file /tmp/uvscanD0/PAGE1.jpg for customer file store copy,Retry.,,,3/27/2024,WLAO
+151,XSI,M901,,Retry.|If it returns- escalate a ticket.,,,3/27/2024,WLAO
+152,XSI,M902,,Retry.|If it returns- escalate a ticket.,,,3/27/2024,WLAO
+153,XSI,O101,Example:|addr_type:  fax|block_number:  525555864635|block_level:  customer|custno:  56433|userno:  1071139|pin|ani|err_msg  SYSTEM error -1 Keyword 'locale' not found for domain 'default': validate error: 5103 - too many dial digits<-validate error: 5103 - too many dial digits<-validate error: 5103 - too many dial digits,Open a ticket and add the number(s) to be blocked with customer/user information for each one. Block the number with the ticket number in the notes field of the block - i.e.: phoneblock -C56433 -n1-2667871797 01152555864635. Verify the block - then kill the error. Close the ticket when complete.||These are recipients with international numbers that have requested a block. The system reads the number as too many or too few dial digits. The number must be blocked with the prefix '011'. ,,,3/27/2024,WLAO
+154,XSI,O111,Example:|Queue item <5379383/ocragent_P1> is not valid. Field <password> is not defined.,Remove OCR from format_options.,,IM1377950,3/27/2024,WLAO
+155,XSI,O300,Example:|OCR Router/Batcher Internal Error,Retry.|If it returns- escalate a ticket.,,,3/27/2024,WLAO
+156,XSI,O301,Example:|OCR EngineRS Internal Error,Retry.|If it returns- escalate a ticket.||CVS:|If the outdoc is 0 bytes - cancel the job.,,IM1418070,3/27/2024,WLAO
+157,XSI,O402,Example:|Job 1441291786-4: Failed to open the OCR XML file [1441291786_3_0004.xml] : Xml2Doc::open() failed!,Retry.|If it returns- escalate a ticket.,,,3/27/2024,WLAO
+158,XSI,O402,Example:|Job 87050381-5: Failed to open the OCR XML file [87050381_4_0001.xml] : Xml2Doc::open() failed!,Retry.|If it returns- escalate a ticket.,,,3/27/2024,WLAO
+159,XSI,P001,Example:|can't determine the user's virtual domain.,Retry.,,,3/27/2024,WLAO
+160,XSI,P001,Example:|ERROR: profile forwarding_address SYNTAX error. ,Correct the user's forwarding address. Retry. If it returns and you're positive the forwarding address is correct - escalate a ticket.,,,3/27/2024,WLAO
+161,XSI,P001,Example:|Required FLN command file missing from input file set,Cancel.,,,3/27/2024,WLAO
+162,XSI,P001,Example:|error converting address list to doc_list,Retry and ensure Tier 2 is aware that the error needed to be retried manually.,,,3/27/2024,WLAO
+163,XSI,P001,Example:|Recipient list is missing mandatory REF value,Cancel.,,,3/27/2024,WLAO
+164,XSI,P001,Example:|ERROR - No Store Number mapped to inbound fax number 8775683431 in stores list,Cancel.|Otherwise - when there are a lot (read: more than fifty) of errors for one particular user - escalate a ticket for investigation. One off errors can be cancelled. If there is a sudden influx of these errors - notify Tier 2 and escalate a ticket.,,,3/27/2024,WLAO
+165,XSI,P001,CVS:|Example:|ERROR - No record was found in recipDb mapping this Fax2Mail number:5124820514 to a CVS store. This could indicate that CVS has removed the store associated with this Fax2Mail number. If the store is no longer valid this Fax2Mail number should be deactivated to prevent future faxes from being received,DO NOT TOUCH - Andy has a script which acts on these errors automatically. Open a ticket if the errors have not cleared after an extended period of time.,,,3/27/2024,WLAO
+166,XSI,P001,CVS1INOCR:|Customer File Store not available,Retry.,,,3/27/2024,WLAO
+167,XSI,P002,Example:|error parsing input message,When there are a lot (read: more than fifty) of errors for one particular user - escalate a ticket for investigation. One off errors can be cancelled. If there is a sudden influx of these errors - notify Tier 2 and escalate a ticket.,,,3/27/2024,WLAO
+168,XSI,P002,Example:|unable to execl parser program,Retry.|If it returns- escalate a ticket.,,,3/27/2024,WLAO
+169,XSI,P003,Example:|user number could not be determined or is invalid,Escalate a ticket.,,,3/27/2024,WLAO
+170,XSI,P004,,When there are a lot (read: more than fifty) of errors for one particular user - escalate a ticket for investigation. One off errors can be cancelled. If there is a sudden influx of these errors - notify Tier 2 and escalate a ticket.,,,3/27/2024,WLAO
+171,XSI,P005,Example:|failed tiffcp conversion,When there are a lot (read: more than fifty) of errors for one particular user - escalate a ticket for investigation. One off errors can be cancelled. If there is a sudden influx of these errors - notify Tier 2 and escalate a ticket.,,,3/27/2024,WLAO
+172,XSI,P008,Example:|no recipient address found,When there are a lot (read: more than fifty) of errors for one particular user - escalate a ticket for investigation. One off errors can be cancelled. If there is a sudden influx of these errors - notify Tier 2 and escalate a ticket.||The user should be contacted and notified that they are sending bad messages that do not contain a recipient. IM1564521,,,3/27/2024,WLAO
+173,XSI,P015,Example:|can't find Email job INDOC_HTML segment to locate the DOCNO,When there are a lot (read: more than fifty) of errors for one particular user - escalate a ticket for investigation. One off errors can be cancelled. If there is a sudden influx of these errors - notify Tier 2 and escalate a ticket.||WFSAFE-T:|Escalate a ticket.,,,3/27/2024,WLAO
+174,XSI,P017,Example:||unable to read input queue item,When there are a lot (read: more than fifty) of errors for one particular user - escalate a ticket for investigation. One off errors can be cancelled. If there is a sudden influx of these errors - notify Tier 2 and escalate a ticket.,,,3/27/2024,WLAO
+175,XSI,P021,Example:|parser program can't handle,When there are a lot (read: more than fifty) of errors for one particular user - escalate a ticket for investigation. One off errors can be cancelled. If there is a sudden influx of these errors - notify Tier 2 and escalate a ticket.||Labcorp:|Escalate a ticket if they will not cancel.,,,3/27/2024,WLAO
+176,XSI,P023,Example:|Error retrieving list stores,** THIS DOES NOT APPLY TO MCKESSON / PUBLIX ** When there are a lot (read: more than fifty) of errors for one particular user - escalate a ticket for investigation. One off errors can be cancelled. If there is a sudden influx of these errors - notify Tier 2 and escalate a ticket.||MCKESSON / PUBLIX:|Ensure that the account has a STORES list. If yes - retry. If the error returns -escalate to determine why the list can not be found. If no - open a Siebel ticket and assign it to Q:CS_IX_FAX2MAIL_ORDER_ENTRY,,,3/27/2024,WLAO
+177,XSI,P024,Example:|Missing Content,When there are a lot (read: more than fifty) of errors for one particular user - escalate a ticket for investigation. One off errors can be cancelled. If there is a sudden influx of these errors - notify Tier 2 and escalate a ticket.,,,3/27/2024,WLAO
+178,XSI,P028,Example:|Non-existant parser,Escalate.,,,3/27/2024,WLAO
+179,XSI,P100,Example:|Unable to read header,When there are a lot (read: more than fifty) of errors for one particular user - escalate a ticket for investigation. One off errors can be cancelled. If there is a sudden influx of these errors - notify Tier 2 and escalate a ticket.,,,3/27/2024,WLAO
+180,XSI,P101,Example:|Invalid answerback string,When there are a lot (read: more than fifty) of errors for one particular user - escalate a ticket for investigation. One off errors can be cancelled. If there is a sudden influx of these errors - notify Tier 2 and escalate a ticket.,,,3/27/2024,WLAO
+181,XSI,P102,Example:|unrecognized address type,When there are a lot (read: more than fifty) of errors for one particular user - escalate a ticket for investigation. One off errors can be cancelled. If there is a sudden influx of these errors - notify Tier 2 and escalate a ticket.,,,3/27/2024,WLAO
+182,XSI,P105,Example:|missing or invalid dial digits,When there are a lot (read: more than fifty) of errors for one particular user - escalate a ticket for investigation. One off errors can be cancelled. If there is a sudden influx of these errors - notify Tier 2 and escalate a ticket.,,,3/27/2024,WLAO
+183,XSI,P112,Example:|attention line is too long,When there are a lot (read: more than fifty) of errors for one particular user - escalate a ticket for investigation. One off errors can be cancelled. If there is a sudden influx of these errors - notify Tier 2 and escalate a ticket.,,,3/27/2024,WLAO
+184,XSI,P116,Example|PDF content is missing,When there are a lot (read: more than fifty) of errors for one particular user - escalate a ticket for investigation. One off errors can be cancelled. If there is a sudden influx of these errors - notify Tier 2 and escalate a ticket.,,,3/27/2024,WLAO
+185,XSI,P116,Example:|Incomplete message,When there are a lot (read: more than fifty) of errors for one particular user - escalate a ticket for investigation. One off errors can be cancelled. If there is a sudden influx of these errors - notify Tier 2 and escalate a ticket.,,,3/27/2024,WLAO
+186,XSI,P501,Example:|Error -6 calling pauseJobDbBegin() Database: X1TLOG1.TLOG command: aux_tlog_db..pauseJobDbBegin 178309135 US1 xsi XOA 1 <-pausejobdbbegin_3_svc: in PROCSTATUS sprocResult = -6 (pausejobdbbegin_3_svc(): nonspecific error -6) <-Message number: 208 Severity 16 <-State 1 Line 689 <-Server 'X1TLOG1' <-Procedure 'pauseJobDbBegin' <-Message String: tlogav..user_job_tbl not found. Specify owner.objectname or use sp_help to check whether the object exists (sp_help may produce lots of output).,Retry.|If it returns- escalate a ticket.,,,3/27/2024,WLAO
+187,XSI,P702,Example:|Preprocessor List Error,Escalate.,,,3/27/2024,WLAO
+188,XSI,Q104,Example:|QuotaStatus: sproc call 'exec quota_status 862522 1 1628585172 'I' '11/02/2016 08:04:51' 0.414000 ' returned -3,Retry.,,,3/27/2024,WLAO
+189,XSI,Q104,Example:|sproc call 'exec quota_job_usage_ins_upd 1628585280 862522 0.020000 '11/02/2016 08:08:07' 'C' ' returned -3,Retry.,,,3/27/2024,WLAO
+190,XSI,Q108,Example:|Error [4]: MisProxy Server error. Server error num: 2 Server error msg: parse_phone(): Can't parse the phone '0118002683313',Cancel.||'800' is not a valid country code. These are typically RFC customers and they need to be notified via proper channels that this is occurring as the cancellation notices will not reach them.,,,3/27/2024,WLAO
+191,XSI,Q108,Example:|Error [4]: MisProxy Server error. Server error num: 2 Server error msg: CustomerRate: No rates defined for customer_no = 865081 (customer_type=855056) currency_type=2 delivery_type='N' rate_category=2 list_id=0 line_type=0.,Determine if the destination number is a valid fax number.|If so - contact the sales rep. If not -cancel the job.||'800' is not a valid country code. These are typically RFC customers and they need to be notified via proper channels that this is occurring as the cancellation notices will not reach them.,,,3/27/2024,WLAO
+192,XSI,Q115,Example:|DMDoc::close<-DocManager::DM_close(),Escalate a ticket.,,,3/27/2024,WLAO
+193,XSI,Q116,"Example:|getDetail(job_no sjob_no sjob_no jobDetailVector** DbPartId&): Database: X1TLOG1.TLOG, command: bcdDetail3ByBSJob 1456207319 2 1000 1 <-getdetail3_3_svc: call to stored procedure failed",Retry.,,,3/27/2024,WLAO
+194,XSI,Q204,Example:|1763876957-11: EXPIRATION Pull item 4702975 missing,Retry.|If it returns- escalate a ticket.,,,3/27/2024,WLAO
+195,XSI,Q211,Example:|No description,Escalate a ticket.||If these are in the queue - it means auto-retry has been exhausted - so they should be escalated for research.,,,3/27/2024,WLAO
+196,XSI,Q212,Example:|No description,Retry.,,,3/27/2024,WLAO
+197,XSI,Q213,Example:|No description,Escalate a ticket.||If these are in the queue - it means auto-retry has been exhausted - so they should be escalated for research.,,,3/27/2024,WLAO
+198,XSI,R100,Example:|cannot stat file xsimcpproc1(800 800):/xsimcpproc1/mcp/run/forms/au/report_report_sap_dsn.out,Example:|Correct the report name in the profile and retry the error.,,,3/27/2024,WLAO
+199,XSI,R100,Example:|cannot stat file xsimcpproc1(800 800):/xsimcpproc1/mcp/run/forms/fr/report_csvattach.out,Retry.|If it returns- escalate a ticket.,,,3/27/2024,WLAO
+200,XSI,R101,Example:| gen_report() - accum sums. fseek to 1221 failed (errno 28),Retry.,,,3/27/2024,WLAO
+201,XSI,R102,Example:|missing endif,Retry.,,,3/27/2024,WLAO
+202,XSI,R102,Example:|bad macro [$CANCREASON411],Retry.,,,3/27/2024,WLAO
+203,XSI,R102,Example:|Empty Report Generated; Check Template,If the report template is pospay and the report_type is summary - cancel the error.,,IM1470235|IM1478030,3/27/2024,WLAO
+204,XSI,R104,Example:|Unable to get HDR <1504391637> Hm_Errno <501>,Retry.,,,3/27/2024,WLAO
+205,XSI,R108,Example:|do_first : Could not get detail. getReportDetail() failed. DBPART error 0 Database: XTLOGUS1.TLOG command: bcdReportEventsByBSJob 1531037366 2 null 1 0 0 1000 0 0 0 <-getreportevents_3_svc: case PROCSTATUS: call to stored procedure failed.,Work the child jobs and/or wait for them to complete. Once the child jobs are complete - retry the error and the report should generate clearing the error.|If there are no child jobs - escalate a ticket.||In most cases these errors occur because a child job has not finished for some reason (errored scheduled etc.) When this occurs the child jobs must be completed or off the error queue for the report to generate.||Use batchlist -s <-job id-> to see the the status of the child jobs. ,,,3/27/2024,WLAO
+206,XSI,R114,Example:|create_mult_docs: Could not find indoc format keyword in header for job <1631475874>,Retry.|If it returns- escalate a ticket.,,,3/27/2024,WLAO
+207,XSI,R118,Example:|Report could not get uan[1608288] info from database,Retry.|If it returns- escalate a ticket.,,,3/27/2024,WLAO
+208,XSI,R130,Example:|Unable to set the virtual domain for uan 2546121 (2546121),Retry.,,,3/27/2024,WLAO
+209,XSI,R136,Example:|attach_doc macro: requires document num in hdr.,If another error occurs due to a drop copy situation the sales rep for the customer should be contacted so that they can investigate with product management what it would take the upgrade the application to support this feature for their customer.,,IM1510776,3/27/2024,WLAO
+210,XSI,R145,Example:|Could not get summary.  getReportStatus() failed. Error Set 0 error -9999,Retry.|If it returns- escalate a ticket.,,,3/27/2024,WLAO
+211,XSI,R157,Example:|gen_report() - accum sums. fseek to 754 failed (errno 28),Retry.|If it returns- escalate a ticket.,,,3/27/2024,WLAO
+212,XSI,R159,Example:|user_id : F2M/86603620679 err_desc : Conflicting codesets in for USER:ATT [UTF-8-ISO-8859-1].,Use Profile Managment and go to FAXREACH - choose char_set - change the value to UTF-8.  Save and then retry the error.,1-5979369412,,3/27/2024,WLAO
+123,XSI,R202,Example:|Could not get input document from doc store,Retry.|If it returns - check to see if the error is in drop copy. If so - cancel the job on Reports.|If it returns and the error is not on drop copy -escalate a ticket.,,IM1517664,3/27/2024,WLAO
+214,XSI,R204,Example:|Could not get letterhead: DEMO MAPFRE,The letterhead was not found. The customer can provide the letterhead for the graphics team to install - after which the error can be retried.|If the letterhead is not available to install - cancel the error.||The available letterheads for a customer can be viewed in Exceed.,,,3/27/2024,WLAO
+215,XSI,R213,Example:|Failed retrieving object: T2/BANCO/ACH BANCOPOP 613480 89326 89327,Retry.|If it returns- escalate a ticket.,,,3/27/2024,WLAO
+216,XSI,R214,Example:|Cannot get job header file from Qitem,Retry.|If it returns- escalate a ticket.,,,3/27/2024,WLAO
+217,XSI,R215,Example:|Failed to get secure password for UAN=2562575 dbget_errno=225 dbget_reason=1070,Contact the customer and have the reset their password for inbound PDF files - then retry the error. Do NOT change this password without speaking to the customer.||This password is found in My Preferences -> Receive Preferences -> Fax Settings Set PDF Password. ,,,3/27/2024,WLAO
+218,XSI,R215,Example:|Raster Controller internal error (mkdir /xdds/raster/in/67885),Retry. If it returns - check the file. If there are issues with the file that prevent processing - ok the error. If the file should process - escalate a ticket.,,,3/27/2024,WLAO
+219,XSI,R223,Example:|pageCount has exceeded max number of pages,OK.,,,3/27/2024,WLAO
+220,XSI,R223,Example:|unable to get logo TOP from the ResourceManager,OK.,,,3/27/2024,WLAO
+221,XSI,R225,Example:|pageCount has exceeded max number of pages,Contact the customer and notify them that they are periodically sending in documents with no data.|Ok.,,,3/27/2024,WLAO
+222,XSI,R225,"Example:|unable to get logo ""TOP"" from the ResourceManager",Contact the customer and notify them that they are periodically sending in documents with no data.|Ok.,,,3/27/2024,WLAO
+223,XSI,R229,Example:|The TIFF-F or XAR (tiffx) Format translation failed,Retry.,,,3/27/2024,WLAO
+224,XSI,R229,Example:|The TIFF-F or XAR (tiffx) translation terminated abnormally,Retry.|If it returns - (ok?/cancel?)||Please include the notes when cancelling the job with notice:|The job shown above has been delivered successfully but there was an issue with the report translation thus causing the R229 error.  ,,,3/27/2024,WLAO
+225,XSI,R235,Example:|PostScript translation PS_G1 produced no or empty pages,Retry.|OK.,,,3/27/2024,WLAO
+226,XSI,R236,Example:|PDF translation PDF_G1 failed (1),OK.,,,3/27/2024,WLAO
+227,XSI,R244,Example:|pageCount has exceeded max number of pages,Escalate a ticket.,,,3/27/2024,WLAO
+228,XSI,R248,Example:|PostScript translation PS_G3 failed (1),MSDW Only:|According to Dev:|Cancel the jobs and edit the profile to remove PS:G3. The profile should correctly contain PS:G2. The customer will need to resubmit the job(s).|Ensure that you send the manual cancellation file so that the job updates on the Morgan Stanley side. If you do not know how to do this - ask for assistance as it MUST be done for every cancelled job.|According to Jill and Raja:|The profile should not be changed as MSDW is testing. Please see Jill and Raja for how to proceed.,,IM1480163,3/27/2024,WLAO
+229,XSI,R310,Example:|No items found to send,Kill.,,,3/27/2024,WLAO
+230,XSI,R317,Example:|TLOG does not show this job to be DONE,Retry.|If it returns- escalate a ticket.,,,3/27/2024,WLAO
+231,XSI,R318,Example:|TLOG and Job Manager child count mismatch,Retry.|If it returns- escalate a ticket.,,,3/27/2024,WLAO
+232,XSI,R326,Example:|Unable to find subjob to resend,Kill.,,,3/27/2024,WLAO
+233,XSI,R332,Example:|Unable to copy attach1:indocno document 61023771: job/user numbers do not match those of the original job,Kill.,,,3/27/2024,WLAO
+234,XSI,R333,Example:|Unable to copy indoc: document 54321592: original document has size zero (0),Kill.,,,3/27/2024,WLAO
+235,XSI,S100,,Correct the report template name.|Retry.,,,3/27/2024,WLAO
+236,XSI,S101,,Correct the report template name.|Retry.,,,3/27/2024,WLAO
+237,XSI,S104,Example:|err_detail : Unable to get HDR <1773264763> Hm_Errno <504>,Retry.|If it returns- escalate a ticket.,,,3/27/2024,WLAO
+238,XSI,S108,Example:|err_detail : do_first : Could not get detail.  getReportDetail() failed. DBPART error 26 getStatus(): server call failed,Retry.|If it returns- escalate a ticket.,,,3/27/2024,WLAO
+239,XSI,S121,,Retry.|If it returns- escalate a ticket.,,,3/27/2024,WLAO
+240,XSI,S130,,Retry.,,,3/27/2024,WLAO
+241,XSI,S145,,Retry.|If it returns- escalate a ticket.||**This may be a virtual domain error.**,,,3/27/2024,WLAO
+242,XSI,S159,Example:|bill_to : xsi/jill|err_detail : Conflicting codesets for USER:ATT [UTF-8-ISO-8859-1].,Use Profile Managment and go to FAXREACH -> choose char_set -> change the value to UTF-8.  Save and then retry the error. Change the char_set back to the original value.,,,3/27/2024,WLAO
+243,XSI,S162,Example:|List item 1 is missing keyword ref||Required list keywords missing or invalid|The group formatter requires certain keywords in the list|Edit the list and insert the keywords as needed.,Retry once; if returns escalate ticket to get account information to fix schedule report|In ticket ask for account information to investigate the failure,,,3/27/2024,WLAO
+244,XSI,S603,Example:|Can't access eventStoreAPI server (DBPART_FAIL),Retry.|If it returns- escalate a ticket.,,,3/27/2024,WLAO
+245,XSI,S604,Example:|Form is not registered,Kill.,,,3/27/2024,WLAO
+246,XSI,S605,Example:|ESME facade exception caught,Retry.|If it returns- escalate a ticket.,,,3/27/2024,WLAO
+247,XSI,S609,Example:|No UAN associated with short code.,Kill.,,,3/27/2024,WLAO
+248,XSI,S610,Example:|DSS error,Retry.|If it returns- escalate a ticket.,,,3/27/2024,WLAO
+249,XSI,U106,Example:|Queue item missing the USER/USER keyword,Retry.|If it returns- escalate a ticket.,,,3/27/2024,WLAO
+250,XSI,U110,Example:|Cannot write user_job_tbl or jobPartition_tbl.,Retry.|If it returns- escalate a ticket.||This is caused when the job numbers roll over but on the back end they are still in the database with old information because purge either hasn't run or is not keeping up. ,,,3/27/2024,WLAO
+251,XSI,W200,Example:|WinRaster Failed DocFx Diagnostic Test,Escalate a ticket unless told it is ok to Kill.,,,3/27/2024,WLAO
+252,XSI,W201,NT Host Failed Time Sync with Switch,Escalate a ticket unless told it is ok to Kill.,,,3/27/2024,WLAO
+253,XSI,W300,Example:|WinGen Internal Error,Retry.|If it returns - check the file. If there are issues with the file that prevent processing - ok the error.|If the file should process - test it on your account with different translators. If you are able to test the file successfully - escalate a ticket.|If you cannot successfully process the file with any translator - ok the error.,,,3/27/2024,WLAO
+254,XSI,W302,Example:|WinGen Internal Error,Retry.|If it returns - check the file. If there are issues with the file that prevent processing - ok the error.|If the file should process - test it on your account with different translators. If you are able to test the file successfully - escalate a ticket.|If you cannot successfully process the file with any translator - ok the error.,,,3/27/2024,WLAO
+255,XSI,W303,Example:|Job Processing Terminated,Retry.|If it returns - check the file. If there are issues with the file that prevent processing - ok the error.|If the file should process - test it on your account with different translators. If you are able to test the file successfully - escalate a ticket.|If you cannot successfully process the file with any translator - ok the error.,,,3/27/2024,WLAO
+256,XSI,W303,Example:|Paper size <Custom> specified in the Document is not supported.|Paper size <Envelope10> specified in the Document is not supported.|Paper size <A3> specified in the Document is not supported.,OK.,,,3/27/2024,WLAO
+257,XSI,W402,Example:|Job 175921248-11: failed to open document (docno = 109146776) : MemZip::open() failed!,**Likely to be CVS**|Retry. If it returns - escalate a ticket - Medium priority.,,IM1440074,3/27/2024,WLAO
+258,XSI,W404,Example:|Q1072: Error logging bcDetail for XQN 1: DBPART error 26 doLog(): server call failed,Retry.|If it returns- escalate a ticket.,,IM1688620,3/27/2024,WLAO
+259,XSI,W405,Example:|Job 176421726-23: Failed to open the OCR XML file [176421726-001.xml] : Xml2Doc::open() failed!,**Likely to be CVS**|Retry. If it returns - escalate a ticket - Medium priority.,,,3/27/2024,WLAO
+260,XSI,W507,Example:|WEBDA No Orchestration CorrelationID found in job HDR,Retry.|If returns after 3 retries - escalate a ticket.,,,3/27/2024,WLAO
+261,XSI,X001,Example:|MCKESSON_DA - All retries failed. This should not happen. Customer server may be down. Check the debug log for more details,Follow the document.||If it is determined that the ded_line cannot be reached - contact McKesson at EnterpriseRxSupport@mckesson.com.,,,3/27/2024,WLAO
+262,XSI,X006,Example:|Qitem/Keys/attachments value has a syntax error.,Always verify that edmta is set up correctly for the user when you see an X006 error. **PLEASE check the customer level - as well.**|Verify that edmta is set up correctly.|Cancel the job with notice.||Instructions: All Fax2Mail users should have 'edmta' in the me_email_delivery profile element in the MR section of the profile.,,,3/27/2024,WLAO
+263,XSI,X006,Example:|UNABLE to get FILENAME for the attachment.,Always verify that edmta is set up correctly for the user when you see an X006 error. **PLEASE check the customer level - as well.**|Check the  header to see if a report has been requested for an already purged job. If so - cancel the error.||Instructions: All Fax2Mail users should have 'edmta' in the me_email_delivery profile element in the MR section of the profile.,,IM1521232,3/27/2024,WLAO
+264,XSI,X008,Example:|Password Expiration Notification program encountered ERROR: getRemindInfoEntry: ERROR: dbget_password_notifications API failed; db_errno='2'; db_reason=0,Escalate for review.,,,3/27/2024,WLAO
+265,XSI,X009,Example:|Message Parsing Error,Kill.,,IM1549425,3/27/2024,WLAO
+266,XSI,X202,,Retry.|If it returns- escalate a ticket.,,,3/27/2024,WLAO
+267,XSI,X501,Example:|read_the_message() failed to get the input document,Retry.|If it returns- escalate a ticket.,,,3/27/2024,WLAO
+268,XSI,X501,Example:|read_the_message() failed PGP encrypt the input document,Retry.|If it returns- escalate a ticket.,,,3/27/2024,WLAO
+269,XSI,X504,Example:|OpenSSH authentication key (SOS) access failure,Retry.|Cancel.,,,3/27/2024,WLAO
+270,XSI,Y102,Example:|Can't insert List 1625344/#sw-brkr-rg-whl-c on usmr2 with modtime 3/1/17 23:01:20 EST because it already exists with modtime 2/28/17 23:01:01 EST,If the modification date of the source is newer - OK the error.||If the modification date of the source is older - KILL the error. ,,,3/27/2024,WLAO
+271,XSI,Y102,Example:|Can't update Report template jp/km/rpt_list_0418 on jp at modtime 6/11/17 21:09:40 EDT because destination object is newer (6/12/17 9:23:48 EDT),If the modification date of the source is newer - OK the error.||If the modification date of the source is older - KILL the error. ,,,3/27/2024,WLAO
+272,XSI,Y103,Example:|Can't populate Stored Object -727782/tts/thout,Retry.|If it returns- escalate a ticket.,,,3/27/2024,WLAO
+273,XSI,Y104,Example:|Can't replicate List 2712180/#.f2m_recip_list.2712180 to sxsi,Retry.|If it returns- escalate a ticket.,,,3/27/2024,WLAO
