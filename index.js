@@ -65,6 +65,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 const [UID, domain, errorCode, description, action, sampleTicket, sampleIM, lastUpdate, rep] = formattedColumns;
 
                 const error = {
+                    UID, // Use UID instead of domain in error object
                     domain,
                     errorCode,
                     description,
@@ -77,7 +78,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 const tr = document.createElement('tr');
                 tr.innerHTML = `
-                    <td class="px-2 py-2 border"><input type="radio" name="errorRadio" value="${domain}"></td>
+                    <td class="px-2 py-2 border"><input type="radio" name="errorRadio" value="${UID}"></td>
                     <td class="px-2 py-2 border">${domain}</td>
                     <td class="px-2 py-2 border">${errorCode}</td>
                     <td class="px-2 py-2 border">${description}</td>
@@ -118,7 +119,7 @@ document.addEventListener("DOMContentLoaded", function () {
         filteredData.forEach(error => {
             const tr = document.createElement('tr');
             tr.innerHTML = `
-                <td class="px-2 py-2 border"><input type="radio" name="errorRadio" value="${error.domain}"></td>
+                <td class="px-2 py-2 border"><input type="radio" name="errorRadio" value="${error.UID}"></td>
                 <td class="px-2 py-2 border">${error.domain}</td>
                 <td class="px-2 py-2 border">${error.errorCode}</td>
                 <td class="px-2 py-2 border">${error.description}</td>
@@ -138,8 +139,8 @@ document.addEventListener("DOMContentLoaded", function () {
             alert('Please select an error to view.');
             return;
         }
-        const domain = selectedRadio.value;
-        window.open(`view.html?domain=${domain}`, '_blank', 'width=600,height=400');
+        const UID = selectedRadio.value; // Get UID of the selected error
+        window.open(`view.html?UID=${UID}`, '_blank', 'width=600,height=400');
     }
 
     fetchErrorData();
